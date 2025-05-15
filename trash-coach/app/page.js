@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import handler from "./api/route";
 
 export default function Home() {
-  return(
-    <p>Hllo world !</p>
-  );
+  handler;
+  return <p> hello world </p>;
 }
