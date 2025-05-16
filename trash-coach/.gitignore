@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .env.local
+
+client_secret_767917204071-l4j6276cmf4gbb2dn18ith8volg0788s.apps.googleusercontent.com.json
+trashcoach-1c446919c460.json

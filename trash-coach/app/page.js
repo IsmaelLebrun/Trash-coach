@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import mysql from "mysql2/promise";
 import FormComponent from "./FormComponent";
+import SendNote from "./SendNote";
 import dynamic from "next/dynamic";
+
 
 export default async function Home() {
   let connexion = await mysql.createConnection({
@@ -54,6 +56,8 @@ export default async function Home() {
     console.error("erreur server : " + err)
   }
 
+  SendNote("ismael.lebrun@laplateforme.io", message);
+
   let goodNote = [];
   let badNote = [];
   try {
@@ -104,6 +108,7 @@ export default async function Home() {
         )}
       </div>
       <FormComponent />
+      <SendNote />
     </div>
   );
 }
