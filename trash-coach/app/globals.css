@@ -107,3 +107,7 @@ body {
     max-width: 100%; /* Prend toute la largeur */
   }
 }
+
+.new-note-input{
+  border: 1px black solid;
+}
